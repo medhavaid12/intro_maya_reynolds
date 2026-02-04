@@ -59,4 +59,4 @@ The goal of this website is to:
 
 1. Clone the repository
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/medhavaid12/intro_maya_reynolds
