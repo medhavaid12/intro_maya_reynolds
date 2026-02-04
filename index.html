@@ -1,0 +1,249 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Lilac Template</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <header class="navbar">
+    <h1>Dr. Maya Reynolds</h1>
+    <nav>
+      <a href="#">Blog</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-image">
+      <img src="images/hero.jpg" alt="Flowers"/>
+    </div>
+    <div class="hero-text">
+      <h2>Introducing<br/>Therapist</h2>
+      <p><strong>Dr. Maya Reynolds, PsyD is a licensed clinical psychologist specializing in anxiety and trauma treatment.</strong></p>
+      <button>Connect with me →</button>
+    </div>
+  </section>
+
+  <section class="about">
+    <div class="about-text">
+      <h2>Live a fulfilling life.</h2>
+      <p>
+        Life can be challenging—especially when you're trying to balance your
+        personal and professional life.
+      </p>
+      <p>
+        It's easy to feel like you're alone in facing these challenges, but I'm
+        here to help.
+      </p>
+      <button>Get in touch →</button>
+    </div>
+    <div class="about-image">
+      <img src="images/about.jpg" alt="Calm setup"/>
+    </div>
+  </section>
+
+  <section class="specialties">
+    <h2>My Specialties</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Anxiety</h3>
+        <p>Building a strong sense of self-worth is key to living a fulfilled life in order to reduce anxiety.</p>
+        <img src="images/self.jpg"/>
+      </div>
+      <div class="card">
+        <h3>Panic</h3>
+        <p> Reduce panic by navigating relationships and build healthier connections.</p>
+        <img src="images/rel.jpg"/>
+      </div>
+      <div class="card">
+        <h3>Burnout</h3>
+        <p>Identify strategies to manage and prevent burnout.</p>
+        <img src="images/burn.jpg"/>
+      </div>
+    </div>
+  </section>
+
+  <!-- SUPPORT SECTION -->
+<section class="support">
+  <img src="images/intro.jpg" alt="Intro image">
+
+  <div class="support-content">
+    <h2>You don’t have to do this all alone.</h2>
+    <p>If you are facing any of these, there’s hope:</p>
+
+    <ul>
+      <li>Persistent feelings of sadness or hopelessness</li>
+      <li>Trouble focusing or making decisions</li>
+      <li>Difficulty maintaining relationships</li>
+      <li>Feeling constantly exhausted or unmotivated</li>
+      <li>A pervasive sense of being overwhelmed</li>
+    </ul>
+
+    <a href="#" class="btn-outline">WORK WITH ME →</a>
+  </div>
+</section>
+
+
+<!-- INTRO SECTION -->
+<section class="intro">
+  <div class="intro-text">
+    <h2>Hi, I’m Maya Reynolds.</h2>
+    <p>
+     I’m a licensed clinical psychologist based in Santa Monica, California, offering therapy
+      for adults who feel overwhelmed by anxiety, stress, or the lingering effects of past 
+      experiences. Many of the people I work with are high-achieving, thoughtful, and self-aware—but
+       internally feel exhausted, stuck in overthinking, or emotionally on edge.
+
+    </p>
+    <a href="#" class="btn-outline">LET’S CHAT →</a>
+  </div>
+
+  <img src="images/faq.jpg" alt="Intro image">
+</section>
+
+
+<!-- FAQ SECTION -->
+<section class="faq">
+  <img src="images/faq2.jpg" alt="FAQ image">
+
+  <div class="faq-content">
+    <h2>FAQs</h2>
+
+    <div class="faq-item">+ How much pay do you take?</div>
+    <div class="faq-item">+ Will you make our data confidential?</div>
+    <div class="faq-item">+ What makes you better than other therapists?</div>
+  </div>
+</section>
+
+
+<!-- PROFESSIONAL BACKGROUND -->
+<section class="background">
+  <h2>My Professional Background</h2>
+
+  <div class="bg-item hoverable">
+    Education <span id="education-toggle">+</span>
+  </div>
+  <div id="education-content" class="bg-content">
+    <p>Master of Social Work from University of Minnesota</p>
+  </div>
+
+  <div class="bg-item active" onclick="toggleContent('licensure')">
+    Licensure <span id="licensure-toggle">-</span>
+  </div>
+  <div id="licensure-content" class="bg-content" style="display: block;">
+    <p>Licensed Clinical Social Worker (LCSW)</p>
+  </div>
+
+  <div class="bg-item" onclick="toggleContent('certifications')">
+    Certifications <span id="certifications-toggle">+</span>
+  </div>
+  <div id="certifications-content" class="bg-content">
+    <p>Certified in Trauma-Focused Cognitive Behavioral Therapy</p>
+  </div>
+</section>
+
+<section class="cta">
+  <img src="images/cta.png" alt="Call to Action">
+</section>
+
+<script>
+function toggleContent(id) {
+  const content = document.getElementById(id + '-content');
+  const toggle = document.getElementById(id + '-toggle');
+  if (content.style.display === 'none' || content.style.display === '') {
+    content.style.display = 'block';
+    toggle.textContent = '-';
+  } else {
+    content.style.display = 'none';
+    toggle.textContent = '+';
+  }
+}
+</script>
+
+<!-- Office Section -->
+<section class="office-section">
+  <div class="office-container">
+
+    <div class="office-text">
+      <h2>Our Office</h2>
+      <p class="office-intro">
+       <strong> Dr. Maya Reynolds’ Santa Monica office is a calm, private space designed to feel welcoming, grounded, and supportive.</strong>
+      </p>
+
+      <p>
+        <strong>The environment is quiet and thoughtfully arranged, with natural light and a comfortable setting that helps 
+                clients feel at ease.Whether attending in-person sessions or engaging in hybrid care, the space is designed
+                to support focus, safety, and privacy.</strong>
+      </p>
+
+      <ul class="office-details">
+        <li><strong>Location:</strong> Santa Monica, California</li>
+        <li><strong>Sessions Available:</strong> In-person and secure telehealth</li>
+        <li><strong>Setting:</strong> Private, comfortable, and confidential</li>
+      </ul>
+    </div>
+
+    <div class="office-images">
+      <img src="assets/office1.jpg" alt="Therapy office interior">
+      <img src="assets/office2.jpg" alt="Calm counseling space">
+      <img src="assets/office3.jpg" alt="Private therapy room">
+    </div>
+
+  </div>
+</section>
+
+
+
+<footer class="site-footer">
+  <div class="footer-top">
+    <!-- Left -->
+    <div class="footer-col">
+      <h3 class="footer-title">Thank you for visiting !!</h3>
+      <p>123th Street 45 W<br>Santa Monica, CA 90401</p>
+      <p>
+        <a href="mailto:email@example.com">maya@gmail.com</a><br>
+        <a href="tel:5555555555">+71-239087</a>
+      </p>
+    </div>
+
+    <!-- Center -->
+    <div class="footer-col">
+      <h3 class="footer-title">Hours</h3>
+      <p>Monday – Friday<br>10am – 6pm</p>
+    </div>
+
+    <!-- Right -->
+    <div class="footer-col">
+      <h3 class="footer-title">Find</h3>
+      <p>
+        <a href="#">Home</a><br>
+        <a href="#">Contact</a><br>
+        <a href="#">Blog</a>
+      </p>
+    </div>
+  </div>
+
+  <!-- Bottom -->
+  <div class="footer-bottom">
+    <p class="footer-links">
+      <a href="#">Privacy & Cookies Policy</a>
+      <a href="#">Good Faith Estimate</a>
+      <a href="#">Website Terms & Conditions</a>
+      <a href="#">Disclaimer</a>
+    </p>
+
+    <p class="footer-credit">
+      Website Template Credits: <a href="#">Go Bloom Creative</a>
+    </p>
+
+    <p class="footer-copy">
+      All Rights Reserved © 2024 Your Business Name Here, LLC.
+    </p>
+  </div>
+</footer>
+
+</body>
+</html>
